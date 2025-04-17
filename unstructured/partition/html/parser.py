@@ -284,7 +284,8 @@ class _ElementAccumulator:
         if ElementCls is Title:
             return (
                 int(self._element.tag[1]) - 1
-                if self._element.tag in ("h1", "h2", "h3", "h4", "h5", "h6")
+                if self._element.tag in ("h1", "h2", "h3", "h4", "h5", "h6", "h7", "h8", "h9", "h10",
+                                         "h11", "h12", "h13", "h14", "h15", "h16", "h17", "h18", "h19", "h20")
                 else 0
             )
 
@@ -952,6 +953,20 @@ element_class_lookup.get_namespace(None).update(
         "h4": Heading,
         "h5": Heading,
         "h6": Heading,
+        "h7": Heading,
+        "h8": Heading,
+        "h9": Heading,
+        "h10": Heading,
+        "h11": Heading,
+        "h12": Heading,
+        "h13": Heading,
+        "h14": Heading,
+        "h15": Heading,
+        "h16": Heading,
+        "h17": Heading,
+        "h18": Heading,
+        "h19": Heading,
+        "h20": Heading,
         "p": BlockItem,
         "pre": Pre,
         # -- list blocks --
